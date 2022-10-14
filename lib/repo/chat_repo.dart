@@ -1,8 +1,9 @@
 import 'dart:async';
 
 import 'package:protask/models/models.dart';
+import 'package:protask/repo/auth_repo.dart';
 
-class ChatRepo {
+class ChatRepo extends AuthRepo {
   final _controller = StreamController<List<Chat>>();
 
   Stream<List<Chat>> get getResponse => _controller.stream;

@@ -35,7 +35,7 @@ class _LoginFormState extends State<LoginForm> {
               Column(
                 children: const [
                   Text(
-                    'Protask',
+                    'CBC',
                     style: TextStyle(
                       fontSize: 50.0,
                       fontWeight: FontWeight.bold,
@@ -132,35 +132,6 @@ class _LoginFormState extends State<LoginForm> {
                     ),
                   ),
                 ),
-              ),
-              const SizedBox(height: 50),
-              Row(
-                children: [
-                  const Text(
-                    'New to Protask?',
-                    style: TextStyle(
-                        //color: Colors.white,
-                        ),
-                  ),
-                  const SizedBox(width: 3),
-                  GestureDetector(
-                    onTap: () {
-                      Navigator.pushAndRemoveUntil(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => const RegisterPage(),
-                          ),
-                          (route) => false);
-                    },
-                    child: const Padding(
-                      padding: EdgeInsets.all(8.0),
-                      child: Text(
-                        'Register',
-                        style: TextStyle(color: Colors.green),
-                      ),
-                    ),
-                  ),
-                ],
               ),
             ],
           ),
